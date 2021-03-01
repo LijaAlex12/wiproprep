@@ -1,7 +1,7 @@
 n=int(input())
-l=[]
+a=[]
 for i in range(n):
-  l[i]=int(input())
+  a[i]=int(input())
 nthsmallest=int(input())
 for i in range(0,n-1):
   for j in range(i+1,n):
