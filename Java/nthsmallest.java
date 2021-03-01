@@ -10,13 +10,13 @@ public class Solution{
     for(int i=0;i<arr.length-1;i++){
       for(int j=i+1;j<arr.length;j++){
         if(arr[i]>arr[j]){
-          temp=arr[i]
-          arr[i]=arr[j]
+          temp=arr[i];
+          arr[i]=arr[j];
           arr[j]=temp;
         }
       }
     }
-    return arr[nthSmallest]
+    return arr[nthSmallest-1];
   }
   public static void main(String args[]) throws Exception{
     Scanner sc=new Scanner(System.in);
@@ -28,7 +28,7 @@ public class Solution{
     }
     int nthSmallest=sc.nextInt();
     
-    System.out.println(NthSmallest(arrNum,nthSmallest))
+    System.out.println(NthSmallest(arrNum,nthSmallest));
       
   }
 }
