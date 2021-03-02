@@ -12,12 +12,11 @@ public class MyClass{
   
   }
   }
-public static void main(String args[]){
-    
-  
+public static void main(String args[]){  
 MyClass t=new MyClass();
 Scanner sc=new Scanner(System.in);
 int p=sc.nextInt();
+
 if(p>0)
 {
   if(t.isCorrectNum(p)){
@@ -26,6 +25,7 @@ if(p>0)
   System.out.println('incorrect Number');
   }
 }
+
 else{
 System.out.println('wrong Input');
 }
