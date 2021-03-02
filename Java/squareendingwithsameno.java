@@ -21,12 +21,12 @@ int p=sc.nextInt();
 if(p>0)
 {
   if(t.isCorrectNum(p)){
-  System.out.println('correct');
+  System.out.println('correct Number');
   else{
-  System.out.println('incorrect');
+  System.out.println('incorrect Number');
   }
 }
 else{
-System.out.println('incorrect Input');
+System.out.println('wrong Input');
 }
 
