@@ -1,13 +1,15 @@
 n=int(input())
+k=list(str(n))
 square=n*n
-ls=list(square)
-l=len(n)
+ls=list(str(square))
+
 s=''
-for i in range(-l):
-  s+str((square[-l]))
-k=int(s)
-if k==n:
-  print('correct')
+ls
+for i in range(-len(k),0):
+    s=s+ls[i]
+j=int(s)
+if j==n:
+    print('correct')
 else:
-  print('wrong')
+    print('incorrect')
   
