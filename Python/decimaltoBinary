@@ -1,0 +1,41 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+# def convertToBinary(n):
+#    if n > 1:
+#        convertToBinary(n//2)
+#    print(n % 2,end = '')
+
+# # decimal number
+# cb(15) 12   5
+# cb(7)   6   2 
+# cb(3)   3   1     10
+# print(1%2)=>1111 1100
+
+
+
+# print()
+if __name__ == '__main__':
+    n = int(input())
+    l=[]
+    while(n>1):
+        l.append(n)
+        n=n//2
+    l.append(1)
+    l.reverse()
+    s=''
+    for i in l:
+        s=s+str(i%2)
+    l=s.split('0')
+    h=[]
+    for i in l:
+       h.append(len(i)) 
+    print(max(h))
+        
